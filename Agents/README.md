@@ -1,7 +1,7 @@
 # Agents
 The core idea of agents is to use a language model to choose a sequence of actions to take. In chains, a sequence of actions is hardcoded (in code). In agents, on the other hand, a language model is used as a reasoning engine to determine which actions to take and in which order.
 
-Large Language Models (LLMs) such as ChatGPT make it possible to build autonomous agents that can automatically solve complex tasks and interact with the environment, humans, or other agents by perceiving, reasoning, planning, and acting in the world. Language agents are a promising step towards artificial general intelligence (AGI) and can help reduce human effort in certain use cases such as customer service, programming, writing, teaching, etc. See the companion [**code examples here.**](/Agents)
+Large Language Models (LLMs) such as ChatGPT make it possible to build autonomous agents that can automatically solve complex tasks and interact with the environment, humans, or other agents by perceiving, reasoning, planning, and acting in the world. Language agents are a promising step towards artificial general intelligence (AGI) and can help reduce human effort in certain use cases such as customer service, programming, writing, teaching, etc. See the companion [**code examples here**.](/Agents)
 
 Following are the key features of a typical “Agents” framework:
 - Long-short term memory
