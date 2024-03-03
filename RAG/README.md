@@ -3,4 +3,4 @@
 
 - [SELF-RAG - RAG Re-Imagined: open Source AI is the way to go, it keeps the innovation ball rolling](/RAG/self-rag.md)
 
-- See the companion [**code examples here**](/RAG)
+- As part of the exploration work for understanding the inner-workings of RAG capabilities, see the companion [**code examples here**](/RAG)
