@@ -1,0 +1,15 @@
+# Thoughts on Contemporary AI technology Landscape - (Re)Imagining RAG
+**What is Retrieval Augmented Generation (RAG)**<br>
+LLMs are trained on vast data sources, but they do not include company specific data sources (knowledge bases and documents etc.). RAG addresses this by dynamically incorporating company's proprietary data sources as context during the generation process. This is done not by altering the training data of the LLMs but by allowing the model to access and utilize your data in real time to provide more tailored and contextually relevant responses.
+
+In RAG, unstructured data is loaded into vector databases and prepared for queries. This process is called indexing. User queries act on this index for the corresponding unstructured dataset, which filters the data down to the most relevant context. This context and your query then are sent to the LLM along with a prompt, and the LLM provides a response.
+
+Currently, RAG process is typically focused towards vector databases as data sources primarily for unstructured data sources. The current RAG process maybe highly enhanced by incorporating the structured knowledge (such as Knowledge Graphs etc.).
+
+However, effectively orchestrating reasoning and retrieval across interconnected knowledge sources in the knowledge graph brings its own challenges. Naive approaches that simply retrieve and concatenate information in discrete steps often fail to fully capture the nuances within dense knowledge graphs. The interconnected nature of concepts means that vital contextual details can be missed if not analyzed in relation to one another.
+
+With the introduction of disparate data source types, there may be a need for database Query-Optimizer/Caching like capability as part of RAG subsystem. Similar to the concept of a DBMS query optimizer/planner, we may need to weigh the potential query plans and choose the optimal one. The idea is to assign relative costs for each stage of the execution and then determine the final cost estimate.
+
+Additionally, future of AI is not one large monolithic model. Alongside large-scale foundation models, trend seems to be toward smaller, bespoke models. Customized with domain-specific data and proprietary knowledge, these smaller models often tend to outperform their larger counterparts on specific tasks and offer additional advantages such as lower costs, faster response times, and greater control over model behavior. Especially, for enterprise business setting, task specific Graph Neural Networks (GNNs) have proven to be more accurate and efficient. As a result, GNNs also need to be included as part of multimodal support for non-Euclidean data structures (graph, in particular).
+
+This may require a model harnessing layer for routing the incoming query to the appropriate AI model as per the business workflow requirements.
