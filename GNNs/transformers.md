@@ -1,5 +1,6 @@
 # Exphormer - Graph Transformer
 [Exphormer: Google makes an important algorithmic step towards efficient graph transformers](https://www.linkedin.com/feed/update/urn:li:activity:7155864887531839489/)<br>
+
 Great to see progress on arbitrary graph data structure support for NN based deep learning, beyond current GNNs. As I mentioned in my earlier post that current neural networks based deep learning is suitable strictly for simple fixed size input datasets (grid-graph/images, linear-sequential-graph/audio & text/language) only.
 
 In order to provide support for Neural-Network based predictive analytics capabilities (no feature engineering) in a typical multi-tables relational data stores (DBMSs) enterprise applications environment, support for arbitrary graph data structure is a must. This is where the core of any enterprise mission critical data lives. No denying the fact that current deep learning (LLMs etc.) has definitely enabled support for unstructured data at par with structured data. But support for multi-tables structured data in the NN environment is utmost important as mentioned earlier.
