@@ -8,4 +8,4 @@ Vector space models are incredibly useful tools in natural language processing. 
 
 Fast and accurate similarity search and retrieval. Vector database can find the most similar or relevant data based on their vector distance or similarity, which is a core functionality for many applications that involve natural language processing, computer vision, recommendation systems, etc.
 
-As part of the exploration work for understanding the inner-workings of Vector Emmeddings, see the companion [**code examples here**](/Vector)
+As part of the exploration work for understanding the inner-workings of Vector Emmeddings, see the companion [**sample code examples here**](/Vector)
