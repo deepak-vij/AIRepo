@@ -1,5 +1,16 @@
-## Query expansion technique is a widely used technique to improve the recall of search systems. In this example, we look at the query expansion that leverages the generative abilities of Large Language Models (LLMs).
+"""Query expansion technique is a widely used technique to improve the recall of search systems. In this example, we look
+ at the query expansion that leverages the generative abilities of Large Language Models (LLMs).
 
+This example demonstrates how LLMs can be used to augment and enhance the user query that is sent to the vector embeddings 
+retrieval system. Essentially, us a LLM to suggest an answer to the question. This provides relevant context. This answer, 
+in turn, is used to retrieve 1-or-many results for the original query with additional context by concatenating the two together.
+ Finally, the query results are fed to the LLM for getting the much superior results. You return your query results as normal.
+
+Another query expansion techniques is called query expansion with multiple queries. The way it works is to firstly use a LLM to
+ suggest additional similar queries to the original query. Then, retrieve the results for the original and new queries from the
+ vector embeddings database. Then, finally, send all responses to the LLM for better query result to complete the RAG loop. Such
+ query expansion techniques give us a much better chance to retrieve the related information.
+"""
 from helper_utils import load_chroma, word_wrap
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 import umap

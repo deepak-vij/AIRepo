@@ -1,4 +1,9 @@
-## This example demonstrates the pitfalls of retrieval – when simple vector search fails.
+""" This example demonstrates the pitfalls of retrieval – when simple vector search fails. Simple vector search is not good enough
+ to make the retrieval work for a typical AI application. Just because things are semantically close, it does not necessarily mean 
+that you get good results out-of-the-box.
+
+This example demonstrates that a simple retrieval embedding system might return distracting or irrelevant results, even for simple queries. 
+"""
 from helper_utils import load_chroma, word_wrap
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 import umap

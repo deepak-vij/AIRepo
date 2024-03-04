@@ -1,4 +1,12 @@
-## This example provides an overview of embeddings-based retrieval.
+""" This example provides an overview of embeddings-based retrieval. You have a user query and you have a set of documents
+ you previously embedded and stored in a retrieval vector database. You take your query and run it through the same embedding
+ model as you used for embedding the documents in the vector database.
+
+Essentially, you embed the query and the retrieval system
+ finds the relevant document based on the query by finding the nearest neighborhood set of those documents. The retrieved documents
+ and the query are fed into the LLM. The LLM synthesizes the retrieved documents to generate an appropriate answer.
+
+"""
 from help_utils import word_wrap
 from pypdf import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter, SentenceTransformersTokenTextSplitter
