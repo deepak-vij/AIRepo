@@ -3,7 +3,7 @@ The downside of the earlier generated queries approach is that we are not sure w
  to the original query. Cross-encoder re-ranking technique addresses this particular issue. It allows to score the relevancy of
  all the returned results and use only the ones that we feel match our original query.
 
-In re-ranking technique, after you retrieve results from the embeddings retrieval system for generated queries, the results are sent to the
+Using the technique, after you retrieve results from the embeddings retrieval system for generated queries, the results are sent to the
  re-ranking model (such as BERT) to re-rank the output whereby the most relevant results have the highest rank/s. Once done, then
  you can select the highest ranking queries to be fed to the LLM to retrieve the final result.
 """
